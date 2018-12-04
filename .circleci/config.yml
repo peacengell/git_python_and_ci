@@ -23,10 +23,6 @@ jobs:
       - run:
           name: activate env
           command: . .venv/bin/activate
-
-      - run:
-          name: run flake8
-          command: flake8 --exclude=.venv* --statistics
       - run:
           name: run tests
           command: pytest -v --cov=calculator
